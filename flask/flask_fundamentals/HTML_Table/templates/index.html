@@ -12,13 +12,18 @@
     <!-- <img src="{{ url_for('static', filename='my_img.png') }}"> -->
 </head>
 <body>
-    <table>
-        <tr>
-            {% for i in x2.key%}
-            <th>{{i}}</th>
-            {% endfor %}
-        </tr>
-    </table>
+   
     
+    <h1>Students</h1>
+    <table>
+    {% for student in range(length) %}
+        <tr>
+            <td>
+                {{ student['name'] }} - {{ student['age'] }}
+            </td>
+        </tr>
+    {% endfor %}
+    
+</table>
 </body>
 </html>
