@@ -13,13 +13,14 @@ def render_list():
 @app.route('/lists')
 def render_lists():
     # Soon enough, we'll get data from a database, but for now, we're hard coding data
-    student_info = [
-       {'name' : 'Michael', 'age' : 35},
-       {'name' : 'John', 'age' : 30 },
-       {'name' : 'Mark', 'age' : 25},
-       {'name' : 'KB', 'age' : 27}
-    ]
-    return render_template("index.html", student = student_info, length = len(student_info))
+    users_info = [
+   {'id':1,'first_name' : 'Michael', 'last_name' : 'Choi'},
+   {'id':2,'first_name' : 'John', 'last_name' : 'Supsupin'},
+   {'id':3,'first_name' : 'Mark', 'last_name' : 'Guillen'},
+   {'id':4,'first_name' : 'KB', 'last_name' : 'Tonel'}
+] 
+
+    return render_template("index.html", users = users_info)
 
 if __name__=="__main__":   
     app.run(debug=True)    
