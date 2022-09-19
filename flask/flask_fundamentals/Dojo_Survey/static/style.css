@@ -1,0 +1,25 @@
+
+
+main {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: 100px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 20px;
+     
+}
+input {
+    width: 250px;
+    display: inline;
+    margin: 0 auto;
+}
+#forms{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+button{
+    margin-top: 5px;
+}
