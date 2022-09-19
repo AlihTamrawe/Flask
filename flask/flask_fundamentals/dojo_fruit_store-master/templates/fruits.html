@@ -24,8 +24,33 @@
         <section class="jumbotron text-center">
           <div class="container">
             <h1 class="jumbotron-heading">Dojo Fruits</h1>
-            <p>Please figure out how to display the images here...</p>
-
+            <p>All The kind of Fruit</p>
+              <div style="display: flex;  justify-content: space-between;">
+                  <div style="flex-direction: column; display: flex; ">
+                      <section>
+                        <img  src="{{ url_for('static', filename='img/apple.png') }}" alt="apple">
+                        <h4>Apple</h4>
+                      </section>
+                  </div>
+                  <div style="flex-direction: column; display: flex; ">
+                    <section>
+                      <img  src="{{ url_for('static', filename='img/blackberry.png') }}" alt="blackberry">
+                      <h4>Blackberry</h4>
+                    </section>
+                </div>
+                <div style="flex-direction: column; display: flex; ">
+                  <section>
+                    <img  src="{{ url_for('static', filename='img/raspberry.png') }}" alt="raspberry">
+                    <h4>Rasberry</h4>
+                  </section>    
+              </div>
+              <div style="flex-direction: column; display: flex; " >
+                
+                  <img  src="{{ url_for('static', filename='img/strawberry.png') }}" alt="stre">
+                  <h4>strewberry</h4>
+               
+            </div>
+              </div>
             <p>
               <a href="/" class="btn btn-primary my-2">Go back</a>
             </p>

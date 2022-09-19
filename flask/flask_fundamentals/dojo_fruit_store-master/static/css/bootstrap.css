@@ -584,7 +584,10 @@ pre code {
     max-width: 1140px;
   }
 }
-
+.container img 
+{width:150px;
+   height:150px
+  }
 .container-fluid {
   width: 100%;
   padding-right: 15px;
