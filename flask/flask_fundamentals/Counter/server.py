@@ -18,29 +18,20 @@ def create():
     else:
         print("key 'key_name' does NOT exist")
         session['name'] =0
-       
-   
-    
     count = session['name']
     count+=1
     session['name']=count
     return render_template('index.html',t=session['name'])
-    
-    
-
 @app.route('/destroy')
 def dest():
     print("Got Post Info")
     if 'name' in session:
         print('key exists!')
-        session['name'] =0
-        
+        session['name'] =0 
     else:
         print("key 'key_name' does NOT exist")
         session['name'] =0
-     
-
-    return render_template('index.html')
+    return redirect('/')
     
     
 
