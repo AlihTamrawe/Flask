@@ -14,14 +14,21 @@ def checkboard(color):
 @app.route('/<int:boardx>')
 def checkboardby8(boardx):
     boardx=int(boardx/2)
-    return render_template("index.html",boardx=boardx,boardy=boardx,flag=0,col='red')
+    col = f"style = 'background-color: blue; '"
+    return render_template("index.html",boardx=boardx,boardy=boardx,flag=0,col=col)
 
 
 @app.route('/<int:boardx>/<int:boardy>')
 def checkboarddef(boardx,boardy):
-    
-    return render_template("index.html",boardx=int(boardx),boardy=int(boardy),flag=0,col='red')
+    col = f"style = 'background-color: blue; '"
+    return render_template("index.html",boardx=int(boardx),boardy=int(boardy),flag=0,col=col)
 
+
+
+@app.route('/ali/<int:age>')
+def chechyourage(age): 
+    col = f"style = 'background-color: blue; '"
+    return render_template("index.html",boardx=int(age),boardy=int(age),flag=0,col=col)
 
 if __name__=="__main__":   
     app.run(debug=True)    
